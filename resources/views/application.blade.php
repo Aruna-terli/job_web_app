@@ -8,8 +8,8 @@
 	<!-- Font-->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/roboto-font.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome-5/css/fontawesome-all.min.css')}}">
-    <link rel="stylesheet" href="{{asset('path/to/choices.min.css')}}"/>
-<script src="{{asset('path/to/choices.min.js')}}"></script>
+   
+
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
 </head>
@@ -141,7 +141,7 @@
 			</form>
 		</div>
 	</div>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 </html>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
