@@ -54,7 +54,7 @@
 </div>
                 <div class="form-row">
 					<label for="full-name">DOB<span style="color:red">*</span></label>
-					<input type="text" name="dob" id="dob" class="input-text" value="{{ old('dob') }}" placeholder="Your DOB" required>
+					<input type="text" name="dob" id="dob" class="input-text" value="{{ old('dob') }}" placeholder="DD/MM/YYYY" required>
 					<i class="fas fa-calendar-alt"></i>
                     @if ($errors->has('dob'))
                             <span style="color:red">{{ $errors->first('dob') }}</span>
