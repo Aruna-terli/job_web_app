@@ -58,7 +58,7 @@ class ApplicationController extends Controller
             'first_name'=>'required',
             'last_name'=>'required',
             'gender'=>'required',
-            'dob'=>'required',
+            'dob' => 'required|date_format:d/m/Y',
             'email'=>'required|email|unique:applicants',
             'phone_no'=>'required|digits:10|unique:applicants',
            'qualification'=>'required',
@@ -75,7 +75,7 @@ class ApplicationController extends Controller
         $applicant->first_name = $data['first_name'];
         $applicant->last_name= $data['last_name'];
         $applicant->gender = $data['gender'];
-        $applicant->dob =  Carbon::createFromFormat('d/m/Y',$data['dob'])->format('Y-m-d');;
+        $applicant->dob =  Carbon::createFromFormat('d/m/Y',$data['dob'])->format('Y-m-d');
         $applicant->email =$data['email'];
         $applicant->phone_no= $data['phone_no'];
         $applicant->qualifications= $data['qualification'];

@@ -8,8 +8,8 @@
 	<!-- Font-->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/roboto-font.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome-5/css/fontawesome-all.min.css')}}">
-    <link rel="stylesheet" href="{{asset('path/to/choices.min.css')}}"/>
-<script src="{{asset('path/to/choices.min.js')}}"></script>
+   
+
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
 </head>
@@ -54,7 +54,7 @@
 </div>
                 <div class="form-row">
 					<label for="full-name">DOB<span style="color:red">*</span></label>
-					<input type="text" name="dob" id="dob" class="input-text" value="{{ old('dob') }}" placeholder="Your DOB" required>
+					<input type="text" name="dob" id="dob" class="input-text" value="{{ old('dob') }}" placeholder="DD/MM/YYYY" required>
 					<i class="fas fa-calendar-alt"></i>
                     @if ($errors->has('dob'))
                             <span style="color:red">{{ $errors->first('dob') }}</span>
@@ -141,7 +141,7 @@
 			</form>
 		</div>
 	</div>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 </html>
 <script>
 document.addEventListener('DOMContentLoaded', function() {

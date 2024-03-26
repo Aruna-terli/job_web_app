@@ -14,7 +14,7 @@
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="{{asset('css/test.css')}}"/>
 </head>
-<body>
+<body id="test_background">
 <div class="questions-form">
 <div class="container">
     <form action="{{ url('submit-answers') }}" method="POST">

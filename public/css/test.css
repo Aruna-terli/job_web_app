@@ -3,9 +3,21 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
   }
+  #result
+  {
+    background-image: url('/assigament_background_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+  #test_background
+  {
+    background-color: #97c6e4;
+  }
   
   .container {
-    width: 60%; /* You can adjust the width as you see fit */
+    width: 60%; 
     margin: 2% auto;
     padding: 20px;
     background-color: #f9f9f9;
@@ -27,7 +39,7 @@ body, html {
   }
   
   .question-block p {
-    font-size: 18px; /* Larger text for questions */
+    font-size: 18px; 
   }
   
   .options label {
@@ -107,15 +119,15 @@ body, html {
   }
   
   .results-details {
-    background: #e7ffe7; /* A light green background for the results */
+    background: #e7ffe7; 
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #d4edd4;
     border-radius: 4px;
   }
   .percentage-score {
-    font-size: 24px; /* Larger font size for the percentage */
-    color: #4CAF50; /* A green color to signify success */
+    font-size: 24px; 
+    color: #4CAF50; 
     font-weight: bold;
     margin-top: 10px;
 }

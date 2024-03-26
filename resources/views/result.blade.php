@@ -7,13 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Font-->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/roboto-font.css')}}">
-
+   <style>
+    </style>
    
 
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="{{asset('css/test.css')}}"/>
 </head>
-<body>
+<body id="result">
 <div class="results-container">
     <h1>Assignment Completed</h1>
     <p>Thank you for completing the assignment. Here are your results:</p>

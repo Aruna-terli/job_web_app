@@ -12,12 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return redirect()->route('index');
+});
 use App\Http\Controllers\ApplicationController;
 Route::get('application','App\Http\Controllers\ApplicationController@index')->name('index');
 Route::post('save','App\Http\Controllers\ApplicationController@store')->name('datastore');
 Route::get('tests/{id}', 'App\Http\Controllers\ApplicationController@show')->name('applicants.show');
 Route::post('submit-answers', 'App\Http\Controllers\ApplicationController@submitAnswers');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
